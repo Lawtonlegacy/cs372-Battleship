@@ -1,4 +1,9 @@
 # cs372-Battleship
+# Project Diaries
+Here are public links to view our project diaries.
+
+Robert's Diary - https://docs.google.com/document/d/16rMhdFzlShC5Rgs86H96V04Dg74JzdnsKXNRTjc8XEk/edit?usp=sharing
+Gannon's Diary - 
 
 
 # User Stories
