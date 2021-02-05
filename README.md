@@ -3,7 +3,8 @@
 Here are public links to view our project diaries.
 
 Robert's Diary - https://docs.google.com/document/d/16rMhdFzlShC5Rgs86H96V04Dg74JzdnsKXNRTjc8XEk/edit?usp=sharing
-Gannon's Diary - 
+
+Gannon's Diary - https://docs.google.com/document/d/17KVdovKURrPPoCYyrfiq5r9627r1mnjlaedeVNT3IAY/edit?usp=sharing
 
 
 # User Stories
