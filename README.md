@@ -1,5 +1,8 @@
 # CS372 Battleship
 This is a project for two college students attempting to create a battleship game. This is our first real attempt at a web application, so progress may be a tad slow as we learn Javascript and basic web development.
+
+Here is a link to our game (work in progress) - https://lawtonlegacy.github.io/cs372-Battleship/
+
 # Project Diaries
 Here are public links to view our project diaries.
 
