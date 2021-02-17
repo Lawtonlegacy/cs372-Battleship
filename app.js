@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
 const userGrid = document.querySelector('.grid-user')
 const computerGrid = document.querySelector('.grid-computer')
 const displayGrid = document.querySelector('.grid-display')
+const ships = document.querySelectorAll('.ship')
+const destroyer = document.querySelector('.destroyer-container')
+const submarine = document.querySelector('.submarine-container')
+const cruiser = document.querySelector('.cruiser-container')
+const battleship = document.querySelector('.battleship-container')
+const carrier = document.querySelector('.carrier-container')
+const rotateButton = document.querySelector('#rotate')
+
+let isHorizontal = true
 
 const userSquares = []
 const computerSquares = []
@@ -60,5 +69,32 @@ const shipArray = [
         ]
     }
 ]
+
+
+
+function rotate() {
+    if (isHorizontal) {
+      destroyer.classList.toggle('destroyer-container-vertical')
+      submarine.classList.toggle('submarine-container-vertical')
+      cruiser.classList.toggle('cruiser-container-vertical')
+      battleship.classList.toggle('battleship-container-vertical')
+      carrier.classList.toggle('carrier-container-vertical')
+      isHorizontal = false
+      console.log(isHorizontal)
+      return
+    }
+    if (!isHorizontal) {
+      destroyer.classList.toggle('destroyer-container-vertical')
+      submarine.classList.toggle('submarine-container-vertical')
+      cruiser.classList.toggle('cruiser-container-vertical')
+      battleship.classList.toggle('battleship-container-vertical')
+      carrier.classList.toggle('carrier-container-vertical')
+      isHorizontal = true
+      console.log(isHorizontal)
+      return
+    }
+  }
+
+  rotateButton.addEventListener('click', rotate)
 
 })
