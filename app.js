@@ -81,7 +81,7 @@ function rotate() {
       carrier.classList.toggle('carrier-container-vertical')
       isHorizontal = false
       console.log(isHorizontal)
-      return
+      return isHorizontal
     }
     if (!isHorizontal) {
       destroyer.classList.toggle('destroyer-container-vertical')
@@ -91,10 +91,28 @@ function rotate() {
       carrier.classList.toggle('carrier-container-vertical')
       isHorizontal = true
       console.log(isHorizontal)
-      return
+      return isHorizontal
     }
-  }
+}
 
   rotateButton.addEventListener('click', rotate)
+
+
+ships.forEach(ship => ship.addEventListener('dragstart', dragStart))
+userSquares.forEach(square => square.addEventListener('dragstart', dragStart))
+userSquares.forEach(square => square.addEventListener('dragover', dragOver))
+userSquares.forEach(square => square.addEventListener('dragenter', dragEnter))
+userSquares.forEach(square => square.addEventListener('dragleave', dragLeave))
+userSquares.forEach(square => square.addEventListener('drop', dragDrop))
+userSquares.forEach(square => square.addEventListener('dragend', dragEnd))
+
+let selectedShipNameWithIndex
+let draggedShip
+let draggedShipLength
+
+ships.forEach(ship => ship.addEventListener('mousedown', (e) => {
+    selectedShipNameWithIndex = e.target.id
+    console.log(selectedShipNameWithIndex)
+}))
 
 })
